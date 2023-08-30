@@ -1,12 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leo Tolstoy</title>
-    <link rel="stylesheet" href="/dist/output.css">
-</head>
-<body>
-    <h1 class="text-2xl">Hello World!</h1>
-</body>
+    <script
+      src="https://kit.fontawesome.com/c043c7361d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!--Navigation Bar-->
+    <header class="p-[30px] border-b-2">
+      <div class="container mx-auto flex justify-between items-center">
+        <h2 class="font-bold text-xl sm:text-2xl text-blue-400">
+          Лев Николаевич Толстой
+        </h2>
+        <nav class="hidden lg:block">
+          <ul class="flex space-x-12 text-gray-400">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Challenge</a></li>
+            <li><a href="#">Bookmark</a></li>
+            <li><a href="#">Bookstore</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </nav>
+        <div
+          class="flex flex-col space-y-1 items-end border-2 p-2 rounded-md cursor-pointer"
+        >
+          <span class="inline-block w-8 h-1 bg-blue-400 rounded"></span>
+          <span class="inline-block w-6 h-1 bg-blue-500 rounded"></span>
+          <span class="inline-block w-4 h-1 bg-blue-400 rounded"></span>
+        </div>
+      </div>
+    </header>
+
+    <!--Hero Section-->
+    <main class="xl:flex xl:justify-between lg:gap-8">
+      <!--Photo and birth-death -->
+      <figure class="container mx-auto lg:max-w-lg">
+        <img
+          class="rounded-b-2xl mb-5"
+          src="/assets/tolstoy-img.jpg"
+          alt="Lev Tolstoy"
+        />
+        <div class="flex justify-around sm:justify-center">
+          <div class="flex-shrink">
+            <span class="text-sm text-gray-500 uppercase">рожденный</span>
+            <span class="block text-blue-500 text-3xl uppercase">9 сентября 1828 г.</span>
+            <span class="text-sm text-gray-500">Ясная Поляна</span>
+          </div>
+          <span
+            class="hidden sm:inline-block w-12 h-[2px] self-center bg-blue-500 mx-8"
+          ></span>
+          <div class="flex-shrink">
+            <span class="text-sm text-gray-500">СМЕРТЬ</span>
+            <span class="block text-blue-500 text-3xl uppercase">20 ноябрь 1910 г.</span>
+            <span class="text-sm text-gray-500">Астапово, Рязань.</span>
+          </div>
+        </div>
+      </figure>
+
+      <!--Info section-->
+      <div class="py-12 xl:max-w-[50%]">
+        <div class="xl:mr-12 px-4">
+          <h1 class="font-bold text-4xl pb-4">ЛЕВ НИКОЛАЕВИЧ ТОЛСТОЙ</h1>
+          <p class="text-gray-600 leading-7">
+            Лев Толстой родился 9 сентября 1828 года в усадьбе Ясная Поляна​
+            Тульской губернии. Он был четвертым ребенком в большой дворянской
+            семье. Толстой рано осиротел. Мать умерла, когда ему не исполнилось
+            еще двух лет, а в девять лет он лишился и отца. Опекуном пятерых
+            детей Толстых стала тетя — Александра Остен-Сакен. Два старших
+            ребенка переехали к тете в Москву​, а младшие остались в Ясной
+            Поляне. Именно с семейной усадьбой связаны самые важные и дорогие
+            воспоминания раннего детства Льва Толстого.
+          </p>
+          <div
+            class="flex flex-col space-y-8 md:flex-row items-center justify-center"
+          >
+            <div class="flex mt-10">
+              <div>
+                <i class="fa-solid fa-bookmark text-3xl w-8"></i>
+              </div>
+              <div class="max-w-3xl">
+                <h3 class="font-bold text-2xl mb-4">Biography</h3>
+                <p class="text-gray-600 leading-7 text-sm">
+                  Лев Толстой — один из самых известных писателей и философов в
+                  мире. Его взгляды и убеждения легли в основу целого
+                  религиозно-философского течения, которое называют
+                  толстовством. Литературное наследие писателя составило 90
+                  томов художественных и публицистических произведений,
+                  дневниковых заметок и писем, а самого его не раз номинировали
+                  на Нобелевскую премию по литературе и Нобелевскую премию мира.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                class="w-[300px] max-w-none"
+                src="/assets/yasnaya-polyana-excursion-the-map.jpg"
+                alt="yasnaya polyana"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h2 class="font-bold text-2xl mb-8 ps-4">Books</h2>
+          <div class="flex overflow-x-auto ms-12">
+            <div class="book min-w-[200px] mr-12">
+              <img src="/assets/anna-karanina.jpeg" alt="" />
+              <h4 class="font-bold text-lg">Anna Karanina</h4>
+              <p class="text-gray-600">4.8 - 4m reviews</p>
+            </div>
+            <div class="book min-w-[200px] mr-12">
+              <img src="/assets/anna-karanina.jpeg" alt="" />
+              <h4 class="font-bold text-lg">Anna Karanina</h4>
+              <p class="text-gray-600">4.8 - 4m reviews</p>
+            </div>
+            <div class="book min-w-[200px] mr-12">
+              <img src="/assets/anna-karanina.jpeg" alt="" />
+              <h4 class="font-bold text-lg">Anna Karanina</h4>
+              <p class="text-gray-600">4.8 - 4m reviews</p>
+            </div>
+            <div class="book min-w-[200px] mr-12">
+              <img src="/assets/anna-karanina.jpeg" alt="" />
+              <h4 class="font-bold text-lg">Anna Karanina</h4>
+              <p class="text-gray-600">4.8 - 4m reviews</p>
+            </div>
+            <div class="book min-w-[200px] mr-12">
+              <img src="/assets/anna-karanina.jpeg" alt="" />
+              <h4 class="font-bold text-lg">Anna Karanina</h4>
+              <p class="text-gray-600">4.8 - 4m reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
